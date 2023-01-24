@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import { DatePicker } from 'antd';
+import Pages from '../../pages';
 
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-        <DatePicker />
+        <Pages />
     </div>
   )
 }
