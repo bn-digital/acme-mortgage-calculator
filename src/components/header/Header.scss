@@ -1,0 +1,21 @@
+.app-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #ffffff;
+  .header-content-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .title-box {
+      flex: 1 1 auto;
+      margin-top: 10px;
+      &.ant-typography {
+        color: gray;
+      }
+    }
+  }
+}

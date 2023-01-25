@@ -12,7 +12,7 @@ const SimpleModal: FC = () => {
             <Title level={3}>{'Title'}</Title>
 
             <div className='btn-block'>
-                <Button>{'Simple modal'}</Button>
+                <Button type={'primary'}>{'Simple modal'}</Button>
             </div>
         </>
     )

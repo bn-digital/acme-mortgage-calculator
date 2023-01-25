@@ -7,6 +7,7 @@ import {DefaultLayout} from "../components/layout/DefaultLayout";
 const NotFound = lazy<FC>(() => import('./not-found'))
 const Form = lazy<FC>(() => import('./form/Form'))
 const Home = lazy<FC>(() => import('./home/HomePage'))
+const Report = lazy<FC>(() => import('./report/Report'))
 
 
 const routes: RouteObject[] = [
@@ -21,6 +22,10 @@ const routes: RouteObject[] = [
             {
                 element: <Form />,
                 path: 'form/:step',
+            },
+            {
+                element: <Report />,
+                path: 'report',
             },
             {
                 element: <NotFound />,

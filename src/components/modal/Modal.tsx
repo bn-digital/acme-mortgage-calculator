@@ -1,5 +1,6 @@
 import { Modal as Wrapped, ModalProps } from 'antd'
 import { FC } from 'react'
+import './Modal.scss'
 
 import { useGeneralContext } from '../context/Context'
 import { SvgIcon } from '../icon'
