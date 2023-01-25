@@ -5,6 +5,7 @@ import {useGeneralContext} from "../../components/context/Context";
 import LenderCard from "../../components/lender-card/LenderCard";
 import './Form.scss'
 import StepTitle from "../../components/step-title/StepTitle";
+import FormFooter from "../../components/form-footer/FormFooter";
 
 const {Title, Text, Paragraph} = Typography
 
@@ -25,15 +26,15 @@ const FormStep02 = () => {
         navigate('/form/3')
     }
     const options = [
-        {label: <LenderCard number={'1'} name={'Accord Mortgage'}/>, value: '1'},
-        {label: <LenderCard number={'2'} name={'Barclays'}/>, value: '2'},
-        {label: <LenderCard number={'3'} name={'The Coventry'}/>, value: '3'},
-        {label: <LenderCard number={'4'} name={'Halifax'}/>, value: '4'},
+        {label: <LenderCard number={'1'} name={'Accord Mortgage'}/>, value: 'Accord Mortgage'},
+        {label: <LenderCard number={'2'} name={'Barclays'}/>, value: 'Barclays'},
+        {label: <LenderCard number={'3'} name={'The Coventry'}/>, value: 'The Coventry'},
+        {label: <LenderCard number={'4'} name={'Halifax'}/>, value: 'Halifax'},
     ]
     return (
         <Form layout={'vertical'} onFinish={onFinish} autoComplete={'off'}
               initialValues={{lender: documentInfo?.lender}} className={'form-wrapper'}>
-            <StepTitle title={' Current Lender'} subtitle={"Who is your client's mortgage with"}/>
+            <StepTitle title={'Current Lender'} subtitle={"Who is your client's mortgage with"}/>
             <div className="form-body">
                 <Form.Item
                     name={'lender'}
@@ -42,16 +43,10 @@ const FormStep02 = () => {
                         {required: true, message: 'Select your current lender'},
                     ]}>
                     <Radio.Group options={options} onChange={onChange} value={lenderValue} optionType="button"
-                                 className={'radio-container'}/>
+                                 className={'radio-grid-container'}/>
                 </Form.Item>
             </div>
-            <Row justify={'end'} className={'form-footer'}>
-                <Col>
-                    <Button type={'text'} onClick={() => navigate('/form/1')}
-                            style={{marginRight: 12}}>{'Preview step'}</Button>
-                    <Button type={'primary'} htmlType={'submit'}>{'Next step'}</Button>
-                </Col>
-            </Row>
+            <FormFooter />
         </Form>
     );
 };

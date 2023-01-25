@@ -4,6 +4,7 @@ import { Outlet } from 'react-router'
 import { Context, defaultValues } from '../context/Context'
 import { Modal } from '../modal/Modal'
 import ModalContent from '../modal/ModalContent'
+import Header from "../header/Header";
 
 const DefaultLayout: FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(defaultValues.isModalOpen)
@@ -22,6 +23,7 @@ const DefaultLayout: FC = () => {
       }}
     >
       <Layout>
+          <Header />
             <Suspense fallback={<Spin />}>
               <Outlet />
             </Suspense>

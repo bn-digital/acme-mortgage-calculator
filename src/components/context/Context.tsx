@@ -2,6 +2,7 @@ import { createContext, Dispatch, SetStateAction, useContext } from 'react'
 
 type ModalTypes =
   | 'simple'
+  | 'errorSubmitting'
 
 type SimpleModalSettings = {
   buttonLink?: string
@@ -22,7 +23,7 @@ export const defaultValues: ContextProps = {
   setModalType: () => null,
   isModalOpen: false,
   setIsModalOpen: () => null,
-  documentInfo: {},
+  documentInfo: {exitFee: '125'},
   setDocumentInfo: () => null,
 }
 const Context = createContext(defaultValues)

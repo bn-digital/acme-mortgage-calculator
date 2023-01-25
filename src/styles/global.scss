@@ -1,0 +1,22 @@
+.ant-layout {
+    background: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+button.ant-btn-text {
+    border: none;
+    background: none;
+
+    &:hover {
+        border: none;
+        background-color: transparent !important;
+    }
+    &:focus {
+        border: none;
+        background-color: transparent !important;
+        outline: transparent;
+    }
+}

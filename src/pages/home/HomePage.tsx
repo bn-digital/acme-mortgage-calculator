@@ -8,7 +8,7 @@ const HomePage = () => {
     return (
         <div>
             <Title>{'Welcome to Mortgage Mathematics'}</Title>
-            <Button type={'primary'} onClick={()=>navigate('/form/1')}>{'Start'}</Button>
+            <Button style={{minWidth: 150}} size={'large'} type={'primary'} onClick={()=>navigate('/form/1')}>{'Start'}</Button>
         </div>
     );
 };
