@@ -11,7 +11,6 @@ const FormStep12 = () => {
         exitFee: string
     }
     const onFinish = (values: FormType) => {
-        console.log(documentInfo);
         setDocumentInfo({...documentInfo, exitFee: values.exitFee })
         if(documentInfo.brokerFee &&
         documentInfo.lender

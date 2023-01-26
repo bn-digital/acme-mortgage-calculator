@@ -20,7 +20,6 @@ const FormStep11 = () => {
         startDate: string
     }
     const onFinish = (values: FormType) => {
-        console.log(value);
         setDocumentInfo({...documentInfo, startDate: value?.format('YYYY-MM-DD') })
         navigate('/form/12')
     }
