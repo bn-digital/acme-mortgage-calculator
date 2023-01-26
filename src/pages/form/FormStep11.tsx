@@ -50,6 +50,7 @@ const FormStep11 = () => {
                         message: 'Select start date',
                     }
                 ]}
+
                 // rules={[
                 //     { required: true, message: 'This field is required', pattern: /^\s*$/ },
                 // ]}
@@ -65,6 +66,7 @@ const FormStep11 = () => {
                     value={value}
                     onChange={onChange}
                     allowClear={false}
+                    autoFocus
                 />
                 </ConfigProvider>
             </Form.Item>

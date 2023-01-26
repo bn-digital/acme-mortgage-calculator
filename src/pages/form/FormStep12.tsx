@@ -3,6 +3,8 @@ import {useNavigate} from "react-router-dom";
 import {useGeneralContext} from "../../components/context/Context";
 import StepTitle from "../../components/step-title/StepTitle";
 import FormFooter from "../../components/form-footer/FormFooter";
+import {lazy, Suspense} from "react";
+import DownloadLink from "../../pdf/DownloadLink";
 
 const FormStep12 = () => {
     const navigate = useNavigate()
@@ -38,6 +40,7 @@ const FormStep12 = () => {
                     <Input size={'large'} placeholder={'Enter exit fee'} autoFocus={true} prefix={'£'}/>
                 </Form.Item>
             </div>
+
             <FormFooter isLastStep={true}/>
         </Form>
     );

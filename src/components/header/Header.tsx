@@ -1,4 +1,3 @@
-import React from 'react';
 import {Button, Typography} from "antd";
 import './Header.scss'
 import {useLocation, useNavigate} from "react-router-dom";
@@ -13,7 +12,7 @@ const Header = () => {
                 <div className="header-content-wrapper">
                     <Title level={3} className={'title-box'}>{'Mortgage Mathematics'}</Title>
                     {location.pathname !== '/' && (
-                        <Button type={'primary'} onClick={() => navigate('/')}>{'Home'}</Button>
+                        <Button type={'ghost'} onClick={() => navigate('/')}>{'Home'}</Button>
                     )}
                 </div>
             </div>

@@ -7,6 +7,7 @@ const NotFound = lazy<FC>(() => import('./not-found'))
 const Form = lazy<FC>(() => import('./form/Form'))
 const Home = lazy<FC>(() => import('./home/HomePage'))
 const Report = lazy<FC>(() => import('./report/Report'))
+const PdfReport = lazy<FC>(() => import('./pdf-report-page/PdfReport'))
 
 
 const routes: RouteObject[] = [
@@ -25,6 +26,10 @@ const routes: RouteObject[] = [
             {
                 element: <Report />,
                 path: 'report',
+            },
+            {
+                element: <PdfReport />,
+                path: 'pdf-report',
             },
             {
                 element: <NotFound />,

@@ -5,8 +5,11 @@ import { Context, defaultValues } from '../context/Context'
 import { Modal } from '../modal/Modal'
 import ModalContent from '../modal/ModalContent'
 import Header from "../header/Header";
+import {useLocation} from "react-router-dom";
 
 const DefaultLayout: FC = () => {
+    const location = useLocation()
+    const currentUrl = location.pathname
   const [isModalOpen, setIsModalOpen] = useState(defaultValues.isModalOpen)
   const [modalType, setModalType] = useState(defaultValues.modalType)
   const [documentInfo, setDocumentInfo] = useState(defaultValues.documentInfo)
@@ -23,7 +26,7 @@ const DefaultLayout: FC = () => {
       }}
     >
       <Layout>
-          <Header />
+          {currentUrl !== '/pdf-report' && <Header />}
             <Suspense fallback={<Spin />}>
               <Outlet />
             </Suspense>

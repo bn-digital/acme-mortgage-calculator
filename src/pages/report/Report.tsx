@@ -1,7 +1,7 @@
 import {Button, Typography} from "antd";
 import './Report.scss'
 import {useGeneralContext} from "../../components/context/Context";
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const {Title, Text, Paragraph} = Typography
 const Report = () => {
@@ -10,7 +10,7 @@ const Report = () => {
     const reportInfo = [
         {
             title: 'Remortgage broker fee',
-            value: '£'+ documentInfo.brokerFee
+            value: '£' + documentInfo.brokerFee
         },
         {
             title: 'Current Lender',
@@ -34,11 +34,11 @@ const Report = () => {
         },
         {
             title: 'Index valuation',
-            value: '£'+ documentInfo.valuationIndex
+            value: '£' + documentInfo.valuationIndex
         },
         {
             title: 'Remortgage valuation',
-            value: '£'+ documentInfo.remortgageValuation
+            value: '£' + documentInfo.remortgageValuation
         },
         {
             title: 'Product type',
@@ -54,14 +54,19 @@ const Report = () => {
         },
         {
             title: 'Exit fee',
-            value: '£'+ documentInfo.exitFee
+            value: '£' + documentInfo.exitFee
         }
     ]
+    const onDownload = () => {
+        navigate('/pdf-report')
+        // window.print()
+    }
+    localStorage.setItem('report',JSON.stringify(reportInfo))
     return (
         <div className={'report-container'}>
             <div className="report-header">
-            <Title level={3}>{'Thank you!'}</Title>
-            <Paragraph >{'Please, check out provided information:'}</Paragraph>
+                <Title level={3}>{'Thank you!'}</Title>
+                <Paragraph>{'Please, check out provided information:'}</Paragraph>
 
             </div>
             {reportInfo.map((it) => {
@@ -82,7 +87,9 @@ const Report = () => {
                 <div className="buttons-block">
                     <Button type={'text'} size={'middle'} onClick={() => navigate(-1)}
                             style={{marginRight: 12}}>{'Back to form'}</Button>
-                    <Button type={'primary'} size={'large'}>{'Download report'}</Button>
+                    <Link to={'/pdf-report'} target={'_blank'}>
+                    <Button  type={'primary'} size={'large'}>{'View report'}</Button>
+                    </Link>
                 </div>
             </div>
 
