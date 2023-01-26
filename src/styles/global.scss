@@ -20,3 +20,23 @@ button.ant-btn-text {
         outline: transparent;
     }
 }
+button.ant-btn-ghost {
+    border: 1px solid gray;
+    &:focus {
+        border: none;
+        outline: transparent;
+    }
+}
+button.ant-btn-primary {
+    border: 1px solid #5c5c5c;
+    background-color: #5c5c5c;
+    &:hover {
+        border: 1px solid #5c5c5c;
+        background-color: #4b4b4b !important;
+    }
+    &:focus {
+        border: none;
+        background-color:  #4b4b4b !important;
+        outline: none;
+    }
+}

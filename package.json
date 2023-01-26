@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@types/node": "^18.11.18",
     "antd": "^5.1.6",
     "dayjs": "^1.11.7",
     "gh-pages": "^5.0.0",

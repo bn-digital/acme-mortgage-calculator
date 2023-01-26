@@ -1,7 +1,7 @@
 import {Button, Typography} from "antd";
 import './Report.scss'
 import {useGeneralContext} from "../../components/context/Context";
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const {Title, Text, Paragraph} = Typography
 const Report = () => {
@@ -57,6 +57,11 @@ const Report = () => {
             value: '£' + documentInfo.exitFee
         }
     ]
+    const onDownload = () => {
+        navigate('/pdf-report')
+        // window.print()
+    }
+    localStorage.setItem('report',JSON.stringify(reportInfo))
     return (
         <div className={'report-container'}>
             <div className="report-header">
@@ -82,7 +87,9 @@ const Report = () => {
                 <div className="buttons-block">
                     <Button type={'text'} size={'middle'} onClick={() => navigate(-1)}
                             style={{marginRight: 12}}>{'Back to form'}</Button>
-                    <Button type={'primary'} size={'large'}>{'Download report'}</Button>
+                    <Link to={'/pdf-report'} target={'_blank'}>
+                    <Button  type={'primary'} size={'large'}>{'View report'}</Button>
+                    </Link>
                 </div>
             </div>
 

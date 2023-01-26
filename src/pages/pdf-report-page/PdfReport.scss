@@ -1,0 +1,54 @@
+.pdf-report-container {
+  width: 800px;
+  height: 1100px;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+  display: flex;
+  flex-direction: column;
+
+
+  margin-top: 30px;
+  .report-header {
+    border-bottom: 1px solid #cbcbcb;
+    height: 120px;
+    padding: 20px 30px 10px 50px;
+    margin-bottom: 40px;
+
+    h3.ant-typography {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+  .report-body {
+    padding: 40px 40px 50px 100px;
+    flex: 1 1 auto;
+
+  }
+  .report-item-wrapper {
+    border-bottom: 1px solid #cacaca;
+    display: flex;
+    height: 30px;
+    margin-bottom: 12px;
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      flex: 1 1 50%;
+      justify-self: self-start;
+      span.ant-typography {
+        text-align: left;
+        min-width: 100%;
+      }
+    }
+    .response {
+      flex: 1 1 50%;
+      display: flex;
+      justify-content: flex-start;
+
+    }
+  }
+  .report-footer {
+    height: 80px;
+    padding: 20px 50px;
+  }
+}
