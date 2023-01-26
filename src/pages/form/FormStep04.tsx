@@ -15,7 +15,6 @@ const FormStep04 = () => {
         repayment: string
     }
     const onChange = ({target: {value}}: RadioChangeEvent) => {
-        console.log(value);
         setValue(value)
     }
     const onFinish = (values: FormType) => {

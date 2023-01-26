@@ -18,7 +18,6 @@ const FormStep02 = () => {
         lender: string
     }
     const onChange = ({target: {value}}: RadioChangeEvent) => {
-        console.log(value);
         setLenderValue(value)
     }
     const onFinish = (values: FormType) => {

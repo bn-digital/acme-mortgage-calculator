@@ -19,7 +19,6 @@ const FormStep03 = () => {
         subAccounts: string
     }
     const onChange = ({target: {value}}: RadioChangeEvent) => {
-        console.log(value);
         setValue(value)
     }
     const onFinish = (values: FormType) => {
