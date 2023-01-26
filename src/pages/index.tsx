@@ -1,6 +1,5 @@
 import {FC, lazy, memo} from "react";
-import type { RouteObject } from 'react-router-dom'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { RouterProvider, RouteObject, useRoutes, BrowserRouter  } from 'react-router-dom'
 
 import {DefaultLayout} from "../components/layout/DefaultLayout";
 
@@ -34,5 +33,9 @@ const routes: RouteObject[] = [
         ],
     },
 ]
-const Router = () => <RouterProvider router={createBrowserRouter(routes)} />
+
+const Routes = () => useRoutes(routes)
+
+const Router = () => <BrowserRouter basename={import.meta.env.PROD ? '/acme-mortgage-calculator/' : '/'}><Routes /></BrowserRouter>
+
 export default memo(Router)
