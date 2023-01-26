@@ -10,7 +10,7 @@ const Report = () => {
     const reportInfo = [
         {
             title: 'Remortgage broker fee',
-            value: '£'+ documentInfo.brokerFee
+            value: '£' + documentInfo.brokerFee
         },
         {
             title: 'Current Lender',
@@ -34,11 +34,11 @@ const Report = () => {
         },
         {
             title: 'Index valuation',
-            value: '£'+ documentInfo.valuationIndex
+            value: '£' + documentInfo.valuationIndex
         },
         {
             title: 'Remortgage valuation',
-            value: '£'+ documentInfo.remortgageValuation
+            value: '£' + documentInfo.remortgageValuation
         },
         {
             title: 'Product type',
@@ -54,14 +54,14 @@ const Report = () => {
         },
         {
             title: 'Exit fee',
-            value: '£'+ documentInfo.exitFee
+            value: '£' + documentInfo.exitFee
         }
     ]
     return (
         <div className={'report-container'}>
             <div className="report-header">
-            <Title level={3}>{'Thank you!'}</Title>
-            <Paragraph >{'Please, check out provided information:'}</Paragraph>
+                <Title level={3}>{'Thank you!'}</Title>
+                <Paragraph>{'Please, check out provided information:'}</Paragraph>
 
             </div>
             {reportInfo.map((it) => {

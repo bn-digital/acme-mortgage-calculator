@@ -1,0 +1,1 @@
+import{aA as e,ay as s,j as a,Z as r,az as i}from"./index-27354563.js";const{Title:o}=i,c=()=>{const t=e();return s("div",{children:[a(o,{children:"Welcome to Mortgage Mathematics"}),a(r,{style:{minWidth:150},size:"large",type:"primary",onClick:()=>t("/form/1"),children:"Start"})]})};export{c as default};
