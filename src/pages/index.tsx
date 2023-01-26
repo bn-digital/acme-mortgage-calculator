@@ -36,6 +36,6 @@ const routes: RouteObject[] = [
 
 const Routes = () => useRoutes(routes)
 
-const Router = () => <RouterProvider router={<BrowserRouter basename={import.meta.env.PROD ? '/acme-mortgage-calculator/' : '/'}><Routes /></BrowserRouter>} />
+const Router = () => <BrowserRouter basename={import.meta.env.PROD ? '/acme-mortgage-calculator/' : '/'}><Routes /></BrowserRouter>
 
 export default memo(Router)
