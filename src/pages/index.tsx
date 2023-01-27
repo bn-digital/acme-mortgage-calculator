@@ -4,11 +4,7 @@ import { RouterProvider, RouteObject, useRoutes, BrowserRouter  } from 'react-ro
 import {DefaultLayout} from "../components/layout/DefaultLayout";
 
 const NotFound = lazy<FC>(() => import('./not-found'))
-const Form = lazy<FC>(() => import('./form/Form'))
 const Home = lazy<FC>(() => import('./home/HomePage'))
-const Report = lazy<FC>(() => import('./report/Report'))
-const PdfReport = lazy<FC>(() => import('./pdf-report-page/PdfReport'))
-
 
 const routes: RouteObject[] = [
     {
@@ -20,18 +16,6 @@ const routes: RouteObject[] = [
                 path: '/',
             },
             {
-                element: <Form />,
-                path: 'form/:step',
-            },
-            {
-                element: <Report />,
-                path: 'report',
-            },
-            {
-                element: <PdfReport />,
-                path: 'pdf-report',
-            },
-            {
                 element: <NotFound />,
                 path: '*',
             },
@@ -41,6 +25,6 @@ const routes: RouteObject[] = [
 
 const Routes = () => useRoutes(routes)
 
-const Router = () => <BrowserRouter basename={import.meta.env.PROD ? '/acme-mortgage-calculator/' : '/'}><Routes /></BrowserRouter>
+const Router = () => <BrowserRouter basename={import.meta.env.PROD ? '/acme-financial-freedom/' : '/'}><Routes /></BrowserRouter>
 
 export default memo(Router)

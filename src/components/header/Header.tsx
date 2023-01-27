@@ -10,7 +10,7 @@ const Header = () => {
         <div className={'app-header'}>
             <div className="container">
                 <div className="header-content-wrapper">
-                    <Title level={3} className={'title-box'}>{'Mortgage Mathematics'}</Title>
+                    <Title level={3} className={'title-box'}>{'Financial-freedom'}</Title>
                     {location.pathname !== '/' && (
                         <Button type={'ghost'} onClick={() => navigate('/')}>{'Home'}</Button>
                     )}
