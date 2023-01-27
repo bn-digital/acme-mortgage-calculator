@@ -2,19 +2,90 @@
   position: fixed;
   left: 0;
   top: 0;
-  height: 70px;
+  height: 150px;
   width: 100%;
-  background-color: #ffffff;
+  z-index: 2;
+
   .header-content-wrapper {
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     .title-box {
       flex: 1 1 auto;
       margin-top: 10px;
       &.ant-typography {
         color: gray;
+      }
+    }
+    .header-menu-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border: none;
+      .ant-menu {
+        min-width: 350px;
+        width: auto;
+        background: none;
+        font-family: DrukWideWeb, sans-serif;
+        color: #fff;
+        border: none;
+
+        .ant-menu-item {
+          &.ant-menu-item-active {
+            color: #dcdcdc;
+            &::before {
+              position: absolute;
+              content: '';
+              border-bottom: unset;
+              width: 8px;
+              height: 8px;
+              left: 50%;
+              top: 40px;
+              transform: translateX(-50%);
+              background-color: #c0c0c0;
+              border-radius: 50%;
+            }
+            &::after {
+              display: none;
+
+            }
+          }
+          &.ant-menu-item-selected {
+            &::after {
+              display: none;
+
+            }
+            &::before {
+              position: absolute;
+              content: '';
+              border-bottom: unset;
+              width: 8px;
+              height: 8px;
+              left: 50%;
+              top: 40px;
+              transform: translateX(-50%);
+              background-color: #fff;
+              border-radius: 50%;
+            }
+
+            .ant-menu-title-content {
+              color: #fff;
+
+            }
+          }
+        }
+      }
+
+    }
+    button.ant-btn.header-btn {
+      color: #fff;
+      font-family: DrukWideWeb, sans-serif;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 8px;
       }
     }
   }

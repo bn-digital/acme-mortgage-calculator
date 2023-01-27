@@ -4,7 +4,7 @@ import { RouterProvider, RouteObject, useRoutes, BrowserRouter  } from 'react-ro
 import {DefaultLayout} from "../components/layout/DefaultLayout";
 
 const NotFound = lazy<FC>(() => import('./not-found'))
-const Home = lazy<FC>(() => import('./home/HomePage'))
+const Home = lazy<FC>(() => import('./home/Home'))
 
 const routes: RouteObject[] = [
     {

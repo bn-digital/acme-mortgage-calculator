@@ -1,10 +1,15 @@
+@font-face {
+    font-family: "DrukWideWeb";
+    src: url("fonts/DrukWide-Medium-Trial.otf") format("opentype");
+}
 .ant-layout {
     background: none;
+    width: 100%;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    height: 100%;
+
 }
 button.ant-btn-text {
     border: none;
