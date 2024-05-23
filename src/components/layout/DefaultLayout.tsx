@@ -1,7 +1,8 @@
-import {Layout, Spin} from 'antd'
+import { ConfigProvider, Layout, Spin } from 'antd'
 import { FC, Suspense, useState } from 'react'
 import { Outlet } from 'react-router'
 import { Context, defaultValues } from '../context/Context'
+import { theme } from "../themeContext";
 import { Modal } from '../modal/Modal'
 import ModalContent from '../modal/ModalContent'
 import Header from "../header/Header";
@@ -25,15 +26,17 @@ const DefaultLayout: FC = () => {
         setDocumentInfo,
       }}
     >
-      <Layout>
+      <ConfigProvider theme={theme}>
+        <Layout>
           {currentUrl !== '/pdf-report' && <Header />}
-            <Suspense fallback={<Spin />}>
-              <Outlet />
-            </Suspense>
-      </Layout>
-      <Modal open={isModalOpen}>
-        <ModalContent />
-      </Modal>
+          <Suspense fallback={<Spin />}>
+            <Outlet />
+          </Suspense>
+        </Layout>
+        <Modal open={isModalOpen}>
+          <ModalContent />
+        </Modal>
+      </ConfigProvider>
     </Context.Provider>
   )
 }
