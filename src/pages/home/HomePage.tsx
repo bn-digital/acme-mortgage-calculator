@@ -1,15 +1,19 @@
 import {Button, Typography} from "antd";
 import {useNavigate} from "react-router-dom";
 
-const {Title} = Typography
+const {Title, Paragraph} = Typography
 
 const HomePage = () => {
     const navigate = useNavigate()
     return (
-        <div>
-            <Title>{'Welcome to Mortgage Mathematics'}</Title>
-            <Button style={{minWidth: 150}} size={'large'} type={'primary'} onClick={()=>navigate('/form/1')}>{'Start'}</Button>
-        </div>
+        <section>
+          <div className={'container'}>
+            <Paragraph className={'subtitle'}>{'Ready to start'}</Paragraph>
+            <Title level={2}>{'Ready to find your refinance options?'}</Title>
+            <Paragraph className={'description'}>{'To start, find your latest mortgage statement. This will give you the numbers you need to fill the fields in the calculator.'}</Paragraph>
+            <Button type={'primary'} onClick={()=>navigate('/form/1')}>{'Start'}</Button>
+          </div>
+        </section>
     );
 };
 

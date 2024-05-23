@@ -37,7 +37,6 @@ export const theme : ThemeConfig = {
   },
   token: {
     colorPrimary: "#4169F6",
-    fontFamily: "Inter, sans-serif",
     colorBgLayout: "#F9F8FA",
   }
 }

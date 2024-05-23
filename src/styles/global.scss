@@ -1,11 +1,26 @@
 //.ant-layout {
 //    background: none;
 //}
-//.container {
-//    max-width: 1200px;
-//    margin: 0 auto;
-//    height: 100%;
-//}
+.container {
+  max-width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 200px 176px 100px 144px;
+}
+
+.subtitle.ant-typography {
+  margin-bottom: 16px;
+  color: #8D8D8F;
+}
+
+.description.ant-typography {
+  max-width: 416px;
+  margin-bottom: 32px;
+
+}
+
+
+
 //button.ant-btn-text {
 //    border: none;
 //    background: none;
