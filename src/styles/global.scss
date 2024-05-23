@@ -1,42 +1,50 @@
-.ant-layout {
-    background: none;
-}
+//.ant-layout {
+//    background: none;
+//}
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
+  max-width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 200px 176px 100px 144px;
 }
-button.ant-btn-text {
-    border: none;
-    background: none;
 
-    &:hover {
-        border: none;
-        background-color: transparent !important;
-    }
-    &:focus {
-        border: none;
-        background-color: transparent !important;
-        outline: transparent;
-    }
+.subtitle.ant-typography {
+  margin-bottom: 16px;
+  color: #8D8D8F;
 }
-button.ant-btn-ghost {
-    border: 1px solid gray;
-    &:focus {
-        border: none;
-        outline: transparent;
-    }
+
+.description.ant-typography {
+  max-width: 416px;
+  margin-bottom: 32px;
+
 }
-button.ant-btn-primary {
-    border: 1px solid #5c5c5c;
-    background-color: #5c5c5c;
-    &:hover {
-        border: 1px solid #5c5c5c;
-        background-color: #4b4b4b !important;
-    }
-    &:focus {
-        border: none;
-        background-color:  #4b4b4b !important;
-        outline: none;
-    }
-}
+
+
+
+//button.ant-btn-text {
+//    border: none;
+//    background: none;
+//
+//    &:hover {
+//        border: none;
+//        background-color: transparent !important;
+//    }
+//    &:focus {
+//        border: none;
+//        background-color: transparent !important;
+//        outline: transparent;
+//    }
+//}
+//button.ant-btn-primary {
+//    border: 1px solid #5c5c5c;
+//    background-color: #5c5c5c;
+//    &:hover {
+//        border: 1px solid #5c5c5c;
+//        background-color: #4b4b4b !important;
+//    }
+//    &:focus {
+//        border: none;
+//        background-color:  #4b4b4b !important;
+//        outline: none;
+//    }
+//}
