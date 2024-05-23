@@ -67,7 +67,6 @@ button.ant-btn {
   height: fit-content;
   padding: 16px;
   border: none;
-  font-family: inherit;
   font-family: 'Inter Medium';
   font-weight: 500;
   /*transition: border-color 0.25s;*/
