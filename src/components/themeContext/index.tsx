@@ -21,6 +21,7 @@ export const theme : ThemeConfig = {
       colorTextHeading: "#101012",
       colorText: "#4B4C4E",
       colorTextDescription: "#8D8D8F",
+      lineHeight: 1.71,
     },
     Input: {
       borderRadius: 4,

@@ -1,23 +1,23 @@
-import {Button, Typography} from "antd";
+import { Button, Layout, Typography } from "antd";
+import logo from "../../assets/Logo.png"
 import './Header.scss'
-import {useLocation, useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const {Title} = Typography
+const {Title, Text} = Typography
 const Header = () => {
-    const location = useLocation()
-    const navigate = useNavigate()
-    return (
-        <div className={'app-header'}>
-            <div className="container">
-                <div className="header-content-wrapper">
-                    <Title level={3} className={'title-box'}>{'Mortgage Mathematics'}</Title>
-                    {location.pathname !== '/' && (
-                        <Button type={'ghost'} onClick={() => navigate('/')}>{'Home'}</Button>
-                    )}
-                </div>
-            </div>
-        </div>
-    );
+  const navigate = useNavigate()
+  return (
+    <Layout.Sider width={480} theme={"light"} className={'app-header'}>
+      <div className={'header-content-wrapper'}>
+        <Button type={'ghost'} onClick={() => navigate('/')} className={"nav-link"}>
+          <img src={logo}/>
+          {'Mortgage Calculator'}</Button>
+        <Title level={1}>{'Find your refinance options'}</Title>
+        <Text className={'header-text'}>{'Mortgage refinancing is when you replace your current home loan with a new one.\n' +
+          'This is a demo of a form submission.'}</Text>
+      </div>
+    </Layout.Sider>
+  );
 };
 
 export default Header;

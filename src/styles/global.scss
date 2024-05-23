@@ -1,42 +1,35 @@
-.ant-layout {
-    background: none;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-}
-button.ant-btn-text {
-    border: none;
-    background: none;
-
-    &:hover {
-        border: none;
-        background-color: transparent !important;
-    }
-    &:focus {
-        border: none;
-        background-color: transparent !important;
-        outline: transparent;
-    }
-}
-button.ant-btn-ghost {
-    border: 1px solid gray;
-    &:focus {
-        border: none;
-        outline: transparent;
-    }
-}
-button.ant-btn-primary {
-    border: 1px solid #5c5c5c;
-    background-color: #5c5c5c;
-    &:hover {
-        border: 1px solid #5c5c5c;
-        background-color: #4b4b4b !important;
-    }
-    &:focus {
-        border: none;
-        background-color:  #4b4b4b !important;
-        outline: none;
-    }
-}
+//.ant-layout {
+//    background: none;
+//}
+//.container {
+//    max-width: 1200px;
+//    margin: 0 auto;
+//    height: 100%;
+//}
+//button.ant-btn-text {
+//    border: none;
+//    background: none;
+//
+//    &:hover {
+//        border: none;
+//        background-color: transparent !important;
+//    }
+//    &:focus {
+//        border: none;
+//        background-color: transparent !important;
+//        outline: transparent;
+//    }
+//}
+//button.ant-btn-primary {
+//    border: 1px solid #5c5c5c;
+//    background-color: #5c5c5c;
+//    &:hover {
+//        border: 1px solid #5c5c5c;
+//        background-color: #4b4b4b !important;
+//    }
+//    &:focus {
+//        border: none;
+//        background-color:  #4b4b4b !important;
+//        outline: none;
+//    }
+//}
