@@ -1,5 +1,5 @@
 import { Button, Layout, Typography } from "antd";
-import logo from "../../assets/Logo.png"
+import logo from "../../assets/logo.png"
 import './Header.scss'
 import { useNavigate } from "react-router-dom";
 
