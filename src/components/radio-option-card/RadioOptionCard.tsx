@@ -5,22 +5,21 @@ import './RadioOptionCard.scss'
 const {Title, Text} = Typography
 
 type Props = {
-    number: string
-    name: string
+  number: string
+  name: string
 }
 
 const RadioOptionCard: FC<Props> = ({number, name}) => {
-    return (
-        <div className={'radio-option-card'}>
-            <div className="content">
-                <div className="check-box">
-                    <Text style={{fontSize: 12}}>{number}</Text>
-                </div>
-                <Text style={{fontSize: 12}}>{name}</Text>
-            </div>
-            <div className="selected-overlay"/>
+  return (
+    <div className={'radio-option-card'}>
+      <div className="content">
+        <div className="check-box">
+          <Text className={'order'}>{number}</Text>
         </div>
-    );
+        <Text className={'label'}>{name}</Text>
+      </div>
+    </div>
+  );
 };
 
 export default RadioOptionCard;

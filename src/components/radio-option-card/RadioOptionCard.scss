@@ -1,27 +1,37 @@
 .radio-option-card {
-  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
 
   .content {
-    padding-left: 10px;
     display: flex;
     align-items: center;
     background-color: transparent;
-    z-index: 2;
+    gap: 8px;
+
     .check-box {
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid #d1d1d1;
+      border: 1px solid #b9b9ba;
       border-radius: 2px;
-      margin-right: 8px;
-      background-color: #f0f0f0;
+      background-color: #e7e7e9;
 
+      .order {
+        font-family: "Inter Bold";
+        font-size: 12px;
+        line-height: 2;
+      }
+    }
+
+    .label {
+      font-family: "Inter Medium";
+      font-size: 16px;
+      line-height: 1.5;
+      color: #101012;
     }
   }
 
