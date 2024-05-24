@@ -1,7 +1,10 @@
 import { Button, Row, Typography } from "antd";
+import { useNavigate} from "react-router-dom";
+import PdfReport from "../../components/pdf-report/PdfReport"
+import { PDFDownloadLink } from "@react-pdf/renderer";
 import './Report.scss'
 import {useGeneralContext} from "../../components/context/Context";
-import { useNavigate} from "react-router-dom";
+
 
 const {Title, Text, Paragraph} = Typography
 const Report = () => {
@@ -61,6 +64,10 @@ const Report = () => {
     // window.print()
   }
 
+  const onDownload = () => {
+
+  }
+
   localStorage.setItem('report',JSON.stringify(reportInfo))
 
   return (
@@ -91,7 +98,9 @@ const Report = () => {
             </Button>
             <Button type={'primary'} onClick={onReport}>{'Submit'}</Button>
           </Row>
-          <Button type={'text'}>{'Download PDF'}</Button>
+          <PDFDownloadLink document={<PdfReport />} fileName={'report'}>
+            <Button type={'text'}>{'Download PDF'}</Button>
+          </PDFDownloadLink>
         </div>
       </div>
     </section>
