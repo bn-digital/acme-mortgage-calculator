@@ -29,6 +29,9 @@ export const theme : ThemeConfig = {
       colorText: "#101012",
       borderRadiusLG: 4,
       fontFamily: "Inter Medium",
+    },
+    Radio: {
+      // colorBorder: "#B9B9BA",
     }
   },
   token: {
