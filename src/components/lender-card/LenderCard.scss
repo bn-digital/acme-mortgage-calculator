@@ -1,16 +1,23 @@
 .lender-card {
-  position: relative;
   width: 100%;
   height: 100%;
+  padding: 8px;
+
+  .ant-input-affix-wrapper &:hover {
+    border-color: #4169f6;
+
+    .name {
+      color: #4169f6;
+    }
+  }
+
   .image-container {
-    z-index: 0;
-    position: absolute;
-    left: 0;
-    top: 8px;
     width: 100%;
-    height: 60%;
+    height: 64px;
+    margin-bottom: 16px;
 
     img {
+      display: block;
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -18,24 +25,29 @@
   }
 
   .content {
-    display: flex;
-    background-color: transparent;
     width: 100%;
-    z-index: 2;
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
+    display: flex;
+    gap: 8px;
+
     .check-box {
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid #d1d1d1;
+      border: 1px solid #b9b9ba;
       border-radius: 2px;
-      margin-right: 5px;
-      background-color: #f0f0f0;
+      background-color: #e7e7e9;
+    }
 
+    .label {
+      font-family: "Inter Medium";
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .name {
+      color: #101012;
     }
   }
 
