@@ -13,7 +13,7 @@ const FormFooter: FC<Props> = ({isPreviewButton = true, isLastStep = false}) => 
             <Col>
                 {isPreviewButton && (
                     <Button type={'text'} onClick={() => navigate(-1)}
-                            style={{marginRight: 12}}>{'Back'}</Button>
+                            style={{marginRight: 16}}>{'Back'}</Button>
                 )}
                 {isLastStep && (
                     <Button type={'primary'} size={'large'} htmlType={'submit'}>{'Submit'}</Button>

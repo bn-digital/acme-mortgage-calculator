@@ -30,8 +30,13 @@ export const theme : ThemeConfig = {
       borderRadiusLG: 4,
       fontFamily: "Inter Medium",
     },
-    Radio: {
-      // colorBorder: "#B9B9BA",
+    DatePicker: {
+      colorBorder: "#B9B9BA",
+      colorTextPlaceholder: "#A0A0A2",
+      colorText: "#101012",
+      borderRadiusLG: 4,
+      fontFamily: "Inter Medium",
+      fontSize: 16,
     }
   },
   token: {
