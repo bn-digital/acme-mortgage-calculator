@@ -24,15 +24,11 @@ export const theme : ThemeConfig = {
       lineHeight: 1.71,
     },
     Input: {
-      borderRadius: 4,
       colorBorder: "#B9B9BA",
-      colorErrorBorder: "#F6414C",
-      colorErrorText: "#F6414C",
-      fontSize: 16,
-      lineHeight: 24,
       colorTextPlaceholder: "#A0A0A2",
-      paddingContentHorizontal: 16,
-      paddingContentVertical: 8,
+      colorText: "#101012",
+      borderRadiusLG: 4,
+      fontFamily: "Inter Medium",
     }
   },
   token: {

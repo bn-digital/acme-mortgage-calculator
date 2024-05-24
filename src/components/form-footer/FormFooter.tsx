@@ -9,17 +9,17 @@ type Props = {
 const FormFooter: FC<Props> = ({isPreviewButton = true, isLastStep = false}) => {
     const navigate = useNavigate()
     return (
-        <Row justify={'end'} className={'form-footer'}>
+        <Row className={'form-footer'}>
             <Col>
                 {isPreviewButton && (
                     <Button type={'text'} onClick={() => navigate(-1)}
-                            style={{marginRight: 12}}>{'Preview step'}</Button>
+                            style={{marginRight: 12}}>{'Back'}</Button>
                 )}
                 {isLastStep && (
                     <Button type={'primary'} size={'large'} htmlType={'submit'}>{'Submit'}</Button>
                 )}
                 {!isLastStep && (
-                    <Button type={'primary'} size={'large'} htmlType={'submit'}>{'Next step'}</Button>
+                    <Button type={'primary'} htmlType={'submit'}>{'Continue'}</Button>
                 )}
             </Col>
         </Row>

@@ -43,6 +43,10 @@ body {
   min-height: 100vh;
 }
 
+.ant-layout {
+  width: fit-content;
+}
+
 h1.ant-typography,
 .ant-typography+h2.ant-typography {
   font-family: 'Inter SemiBold';

@@ -1,32 +1,23 @@
-.form-container {
-  position: relative;
-  width: 600px;
-  background-color: #fff;
-  border: 1px solid #e3e3e3;
-  border-radius: 10px;
-  padding: 30px 30px;
-  margin-top: 30px;
+.ant-form-vertical {
+  width: 640px;
 
-  .form-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 300px;
+  .ant-input-affix-wrapper {
+    padding: 8px 15px 8px 16px;
+    .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled),
+    .ant-form-item-explain-error {
+      border-color: #f6414c;
 
-    .form-body {
-      flex: 1 1 auto;
+      .ant-input-prefix {
+        color: #101012;
+      }
+    }
 
+    .ant-input-prefix {
+      font-family: "Inter Medium";
     }
   }
 
-  .step-box {
-    position: absolute;
-    right: 30px;
-    top: 20px;
 
-    .ant-typography {
-      color: #888;
-    }
-  }
 }
 
 .radio-grid-container {
