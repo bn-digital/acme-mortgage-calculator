@@ -1,8 +1,9 @@
 .container {
-  max-width: 960px;
+  width: 100vw;
+  min-height: 100vh;
   height: fit-content;
   margin: 0 auto;
-  padding: 200px 176px 100px 144px;
+  padding: 200px 176px 100px 624px;
 }
 
 .subtitle.ant-typography {
